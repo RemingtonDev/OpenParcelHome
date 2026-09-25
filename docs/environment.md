@@ -1,0 +1,19 @@
+# Research environment — 2026-09-25
+
+Verified locally: macOS 27.0 (26A428), native arm64, 18 GiB memory;
+Python 3.14.7; Git 2.54.0; Homebrew 7.0.2; Apple Command Line Tools available.
+No supplied starter files were present in the workspace; helpers were written here.
+
+Installed JADX 1.5.6 and Apktool 3.0.3 through existing Homebrew. Homebrew added
+OpenJDK 27 and upgraded dependency formulae glib to 2.90.0 and harfbuzz to 14.5.0.
+No global Python, shell profile or JAVA_HOME changes. A project `.venv` contains
+Bleak 3.0.2 and PyObjC 12.2.2 components; exact resolved versions are kept privately
+in `.local/reports/python-resolved.txt`.
+
+Apktool decoding exited 0. JADX exited 3 with 84 reported decompilation errors;
+its output is partial, and critical encoding was cross-checked in smali. No claim
+of complete decompilation. Android SDK/apksigner are not installed; Android signature
+scheme verification remains outstanding. JDK jarsigner is not a substitute for it.
+
+Five offline tests passed locally. No scan, connection, notification subscription,
+cloud authentication or physical operation was performed in the initial research.

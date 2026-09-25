@@ -1,0 +1,14 @@
+.local/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.apk
+*.xapk
+*.apks
+*.ipa
+*.pcap
+*.pcapng
+*.log
