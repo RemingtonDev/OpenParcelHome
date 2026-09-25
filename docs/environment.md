@@ -15,5 +15,6 @@ its output is partial, and critical encoding was cross-checked in smali. No clai
 of complete decompilation. Android SDK/apksigner are not installed; Android signature
 scheme verification remains outstanding. JDK jarsigner is not a substitute for it.
 
-Five offline tests passed locally. No scan, connection, notification subscription,
+Five offline tests passed locally and on GitHub Actions with Python 3.12 and 3.14
+([run 36175438164](https://github.com/RemingtonDev/OpenParcelHome/actions/runs/36175438164)). No scan, connection, notification subscription,
 cloud authentication or physical operation was performed in the initial research.
