@@ -54,3 +54,15 @@ E11 — verified/offline: 28 tests cover reference matching, parser bounds, malf
 and mismatched responses, consent, explicit target, exclusive attempt marker,
 timeout/cancellation cleanup, and no repeat opening writes. No response capture
 or successful opening result is claimed.
+
+
+D2 — verified/device + owner report: explicitly approved opening write completed at
+2026-09-25T19:14:26Z. Owner confirmed no opening. Two complete parsed replies, then
+clean unsubscribe/disconnect. Private sanitised capture:
+`.local/opening-results/20260925T191426Z-2332d8ab0ceb43fa9b7e2386be317913.json`.
+No control retries or final application ACK sent; marker remains active.
+
+E12 — verified/static: BTService.java:93 (`finalizeCommand`) builds its ACK using
+the second received message's ID. HomeActivity.java:333 checks zero error status
+for its opening-success path. This supports interpreting the observed nonzero
+trailer as unsuccessful; the exact meaning of 2 is unknown. See opening-result-01.md.

@@ -22,4 +22,5 @@ cloud authentication or physical operation was performed in the initial research
 
 Current preparation: 28 offline tests pass, including the opening runner. The APK
 signatures pass and a tampered copy fails. No new Bluetooth operation was performed
-during preparation, and no opening command has been sent.
+during preparation. One opening probe subsequently ran under explicit approval;
+it did not open the box (see opening-result-01.md).

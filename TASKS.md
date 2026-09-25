@@ -20,7 +20,10 @@
 - [x] Owner confirmed normal keypad access after service discovery.
 - [x] Implement opening encoder and bounded response framing with synthetic/reference tests.
 - [x] Prepare private-input single-attempt runner and reviewable opening experiment (28 offline tests).
-- [ ] Obtain explicit approval for the prepared opening experiment; no live opening command sent.
+- [x] Obtain explicit approval and send one opening probe (D2); two replies received, disconnection clean.
+- [x] Record D2 outcome: owner reports no opening; delivery and disconnect succeeded; reply trailer was 2.
+- [x] Owner confirmed normal keypad access after D2; retry guard remains active.
+- [ ] Explain nonzero BLE result and code/session requirements before proposing another test.
 - [ ] Verify one authorised operation on the actual box.
 - [ ] Verify fresh-client offline onboarding and document limitations.
 - [ ] Build the iPhone client after the protocol/credential gate passes.

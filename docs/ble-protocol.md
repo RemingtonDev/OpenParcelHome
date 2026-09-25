@@ -61,4 +61,5 @@ message's two-bit type and 14-bit ID; trailing values use the app parser's signe
 16-bit interpretation. The response tests are synthetic structural tests. Message
 types, success codes and response ordering have NOT been validated on the device.
 The first opening experiment sends no application ACK; see its explicit limits in
-opening-test.md. No real opening command has been sent.
+opening-test.md. One real opening command was subsequently sent in D2; it did not open the box.
+See opening-result-01.md for the observed replies and interpretation limits.

@@ -4,9 +4,9 @@ Independent, community-led preservation of ParcelHome delivery boxes.
 The goal is to let owners keep using their own hardware with a documented local
 protocol and, eventually, an iPhone app. Not affiliated with or endorsed by ParcelHome.
 
-**Research stage: an experimental opening runner is prepared but has never been
-used on a box.** BLE services match one owner device; actual opening and
-cloud-independent recovery remain unproven. Existing keypad access
+**Research stage: the first authorised opening attempt did not open the box.**
+BLE services match one owner device and command delivery works; successful opening
+and cloud-independent recovery remain unproven. See [the result](docs/opening-result-01.md). Existing keypad access
 should be preserved throughout testing.
 
 ## What we have found
@@ -21,7 +21,8 @@ independently established. See [feasibility](docs/feasibility.md) and
 
 ## Start here
 
-- [Prepared one-attempt opening test](docs/opening-test.md)
+- [First opening result and remaining questions](docs/opening-result-01.md)
+- [Original one-attempt test plan](docs/opening-test.md)
 - [Findings and next experiment](docs/feasibility.md)
 - [Bluetooth observations](docs/ble-protocol.md)
 - [Authentication and credentials](docs/authentication.md)
@@ -65,7 +66,7 @@ resolved. This is not yet a reproducibly locked end-user release.
 
 1. Done: verify Android signatures, document provenance limits and map the opening path.
 2. Done: compare the nearby candidate's BLE services with the app through approved discovery.
-3. Ready: offline-tested codec and guarded runner; await a separately approved opening test.
+3. Investigate: the offline-tested runner sent one approved probe; the box did not open.
 4. Demonstrate onboarding on a fresh client without the original cloud.
 5. Build an iPhone client; consider Android, Home Assistant and Homey afterwards.
 

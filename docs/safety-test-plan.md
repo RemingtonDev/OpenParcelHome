@@ -69,3 +69,9 @@ one connection experiment, not authentication or opening commands.
 
 Offline verification: eight tests pass, including consent gate, exact target match,
 one connection, metadata-only fake client and cleanup after a connection failure.
+
+## D2 opening probe
+
+The owner explicitly approved the prepared opening test. One command was sent and
+the connection cleaned up. The owner reported no opening. The retry marker remains
+active. See opening-result-01.md; no further command is authorised.

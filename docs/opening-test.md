@@ -1,6 +1,10 @@
-# Proposed first opening experiment — NOT RUN
+# First opening experiment — completed; no opening
 
-## Ready for owner review
+The owner approved this plan and the single attempt completed without opening the
+box. See [D2 results](opening-result-01.md). Do not rerun it; the attempt marker remains
+active. The following records the original reviewed plan.
+
+## Reviewed preconditions
 
 The Android archive passes Google's apksig 9.4.1 verifier (v1 and v2), and a
 one-byte-tampered copy is rejected. Publisher identity has not been independently
@@ -61,8 +65,7 @@ After approval for the above experiment, the owner can run this in a local Termi
 
 Do not enter the real code in chat or through an agent tool. The target file was
 selected from the private discovery captures and is not distributed on GitHub.
-No process is waiting for credentials and no radio operation is started by merely
-opening this document.
+The process has exited. No radio operation is started by merely opening this document.
 
 A private attempt marker blocks subsequent dispatch. The CLI also checks it before
 asking for credentials or scanning. There is deliberately no retry/reset flag.

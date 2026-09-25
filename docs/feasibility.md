@@ -10,7 +10,8 @@ inspected builder and GATT write path contain no extra app-layer encryption step
 This does not establish the device's permission checks or Bluetooth link security.
 
 Hypothesis: an existing owner-held fixed/keypad code might also be accepted by the
-BLE opening command. No real code has been tried over BLE; an offline-tested experimental runner is now prepared.
+BLE opening command. One owner-entered code was tried in an approved minimal BLE opening probe; it did
+not open the box. This does not establish that all fixed-code paths are impossible.
 A server-issued receive code may have different privileges, lifetime or validation.
 The firmware might reject fixed codes, require other state, or differ from the APK.
 
@@ -26,11 +27,10 @@ no recoverable original iPhone app. This has not been independently hardware-tes
 
 The device service inventory now matches the app; Android v1/v2 signatures verify.
 The codec matches five synthetic reference vectors and 28 offline tests pass.
-The next step is the [prepared opening experiment](opening-test.md), after explicit
-owner approval and local hidden credential entry. It sends a single code-bearing
-opening frame, with no optional timestamp/log fields or automatic retry.
-Actual code acceptance, response semantics and publisher identity independent of
-the mirror remain unknown. The experiment has not run.
+The [first approved opening experiment](opening-result-01.md) has now run: one
+write completed, two replies arrived, but the owner reported no opening. The
+next step is to explain the nonzero response and credential/session requirements
+before proposing any further live operation. The retry marker remains active.
 
 ## Completion boundary
 
