@@ -80,3 +80,12 @@ executed the inspected builder's GET_STATUS, GET_AUTH_FIXED_CODE("123456") and A
 methods. Request IDs were replaced with 123/124; ACK used 16383. Results are private
 in `.local/reports/diagnostic-reference-vectors.txt` and encoded as synthetic test
 expectations in tests/test_diagnostics.py. No live diagnostic query was sent.
+
+
+D3 — verified/device: approved batch completed at 2026-09-25T19:23:51Z. GET_STATUS
+returned status 0 with 47 data bytes (closed; firmware integer 196865).
+GET_AUTH_FIXED_CODE returned status 0 with one permission byte, decoded ALWAYS_OPEN.
+Both response ACKs and cleanup completed. Owner confirmed normal keypad access.
+Private sanitised capture:
+`.local/diagnostic-results/20260925T192351Z-d511c5b2c76044058695b9ca6ec982db.json`.
+No opening/configuration command or cloud request was sent in this batch.

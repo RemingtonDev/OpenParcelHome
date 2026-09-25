@@ -1,6 +1,8 @@
 # D3 proposal — status and fixed-code permission query
 
-**Prepared and offline-tested; NOT RUN.** No opening command is included.
+**Completed under explicit approval.** Both queries succeeded; see
+[the D3 results](diagnostic-result-01.md). No opening command was included.
+The diagnostic retry guard is active; the plan below records the approved scope.
 
 ## Question and deciding test
 
@@ -76,4 +78,4 @@ No ongoing unrestricted testing or repeated opening attempts are implied.
 permission semantics, invalid inputs, offline default, exact maximum writes,
 response IDs distinct from request IDs, stop on status error, malformed replies,
 wrong ACK, write failure, enablement and cleanup. Earlier opening and discovery
-safety tests also remain green. Real D3 compatibility remains untested.
+safety tests also remain green. D3 subsequently confirmed this query/acknowledgement sequence on the owner's box.

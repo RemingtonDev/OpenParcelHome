@@ -24,11 +24,13 @@
 - [x] Record D2 outcome: owner reports no opening; delivery and disconnect succeeded; reply trailer was 2.
 - [x] Owner confirmed normal keypad access after D2; retry guard remains active.
 - [ ] Explain nonzero BLE result and code/session requirements before proposing another test.
-- [ ] Verify one authorised operation on the actual box.
+- [x] Verify authorised local diagnostic operations on the actual box (D3 status and code permission).
+- [ ] Verify a successful opening operation on the actual box.
 - [ ] Verify fresh-client offline onboarding and document limitations.
 - [ ] Build the iPhone client after the protocol/credential gate passes.
 
 ## Follow-up diagnostics
 - [x] Trace fixed-code permission query, status parsing and response ACKs in the app.
 - [x] Prepare bounded status/permission diagnostic batch; 36 offline tests pass.
-- [ ] Obtain approval and run D3 diagnostics; no further opening attempt authorised.
+- [x] Obtain approval and run D3: status and fixed-code permission succeeded; supplied code is ALWAYS_OPEN.
+- [x] Owner confirmed normal keypad access after D3; no further opening attempt authorised.

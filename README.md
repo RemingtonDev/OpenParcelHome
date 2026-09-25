@@ -5,8 +5,8 @@ The goal is to let owners keep using their own hardware with a documented local
 protocol and, eventually, an iPhone app. Not affiliated with or endorsed by ParcelHome.
 
 **Research stage: the first authorised opening attempt did not open the box.**
-BLE services match one owner device and command delivery works; successful opening
-and cloud-independent recovery remain unproven. See [the result](docs/opening-result-01.md). Existing keypad access
+Local status and fixed-code permission queries now work on one owner device.
+Successful opening and cloud-independent recovery remain unproven. See [the result](docs/opening-result-01.md). Existing keypad access
 should be preserved throughout testing.
 
 ## What we have found
@@ -21,6 +21,7 @@ independently established. See [feasibility](docs/feasibility.md) and
 
 ## Start here
 
+- [Successful local diagnostic results](docs/diagnostic-result-01.md)
 - [First opening result and remaining questions](docs/opening-result-01.md)
 - [Original one-attempt test plan](docs/opening-test.md)
 - [Findings and next experiment](docs/feasibility.md)

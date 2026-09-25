@@ -47,3 +47,12 @@ without reading values, subscribing or sending control commands. This removes th
 service-compatibility uncertainty for this candidate; numeric-code equivalence and
 authorised command behaviour remain untested. Signature verification and offline protocol/response tests subsequently completed;
 see the prepared opening experiment.
+
+## D3 — successful local diagnostics
+
+Status and fixed-code permission queries completed with status 0, each response
+was acknowledged, and the owner confirmed normal keypad access afterwards. The
+supplied code returned ALWAYS_OPEN. This establishes useful local diagnostic access,
+not a successful opening path. No code identity comparison across D2/D3 is possible
+because credentials are deliberately neither stored nor fingerprinted. See
+[the results](diagnostic-result-01.md) for the remaining opening-credential question.
