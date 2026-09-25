@@ -41,3 +41,5 @@
 - [x] Compare Bluetooth identifiers, opening builder and response acknowledgement; crosscheck critical methods in smali.
 - [x] Record findings and remaining hypotheses in docs/research-follow-up.md.
 - [ ] Resolve opening result 2 or obtain evidence distinguishing fixed codes from receive codes.
+- [x] Confirm manufacturer-stated ParcelHome technology connection and portal registration requirement.
+- [x] Prepare an unsent RENZ enquiry about old-box compatibility, result 2 and local operation.

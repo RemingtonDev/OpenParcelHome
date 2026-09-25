@@ -98,3 +98,25 @@ response acknowledgement. That would be a diagnostic experiment with uncertain
 success, not a demonstrated fix. It requires a separate reviewed plan and owner
 approval under the existing hardware-test rules. Existing retry guards remain.
 No additional secret or hardware purchase is needed for the static investigation.
+
+## Manufacturer connection confirmed
+
+The owner identified the [MEFA product page](https://me-fa.dk/produkt/myrenzbox-homebox-paa-fod-sort/)
+as visually matching their box. Independently, that page explicitly attributes the
+product to ParcelHome Technology and says portal registration is required before
+use, with a stated processing time of two to three business days. This confirms a
+commercial technology connection, not compatibility with every old ParcelHome box.
+
+The linked [manual](https://me-fa.dk/wp-content/uploads/2023/09/myRENZBox_Homebox_brugermanual_rev.pdf)
+directs owners to validate a phone number and contact support when their box is
+missing from the app. Its opening instructions require internet and describe
+server-supplied, single-use codes with a two-minute lifetime. The related APK also
+contains the product-page URL, a ParcelHome v3 API URL and a RENZ communication
+service URL. Strings do not establish which backend is active or whether old box
+registrations are supported; no authenticated API requests were made.
+
+The highest-value next external evidence is a manufacturer answer about existing
+ParcelHome 3 onboarding and OPEN_BOX result 2. A draft is available in
+[renz-support-enquiry.md](renz-support-enquiry.md); it has not been sent. The compiled
+Dart receive-code control flow remains unresolved. Static similarity alone is not
+a reason to register, reset or synchronise the working reference box.
