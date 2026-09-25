@@ -14,13 +14,14 @@ should be preserved throughout testing.
 Static inspection of a myParcelHome 3.0.2 Android archive identified BLE service
 and characteristic UUIDs and a command that carries a numeric opening code.
 The original app obtains that code from a cloud API. Whether an existing keypad
-code is accepted over BLE is **an untested hypothesis**, not a recovery procedure.
+code is accepted over BLE remains **unproven after one failed opening probe**, not a recovery procedure.
 Android v1/v2 signatures verify, but publisher authenticity has not been
 independently established. See [feasibility](docs/feasibility.md) and
 [artifact provenance](docs/artifact-provenance.md).
 
 ## Start here
 
+- [Community research and related APK comparison](docs/research-follow-up.md)
 - [Successful local diagnostic results](docs/diagnostic-result-01.md)
 - [First opening result and remaining questions](docs/opening-result-01.md)
 - [Original one-attempt test plan](docs/opening-test.md)

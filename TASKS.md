@@ -34,3 +34,10 @@
 - [x] Prepare bounded status/permission diagnostic batch; 36 offline tests pass.
 - [x] Obtain approval and run D3: status and fixed-code permission succeeded; supplied code is ALWAYS_OPEN.
 - [x] Owner confirmed normal keypad access after D3; no further opening attempt authorised.
+
+## Public research and related APK follow-up
+- [x] Recheck public community sources; no verified local replacement found in bounded searches.
+- [x] Acquire and verify a related myRENZbox Homebox archive privately.
+- [x] Compare Bluetooth identifiers, opening builder and response acknowledgement; crosscheck critical methods in smali.
+- [x] Record findings and remaining hypotheses in docs/research-follow-up.md.
+- [ ] Resolve opening result 2 or obtain evidence distinguishing fixed codes from receive codes.
