@@ -25,4 +25,9 @@ Cross-checks in `.local/analysis/apktool/smali/com/parcelhome/android/owner/`:
 **Hypothesis:** an existing keypad code may work in the numeric BLE opening field.
 **Unknown:** credential equivalence, target revision, link permissions, full Android signing validity, offline onboarding.
 
-No confirmed-device claims or live capture IDs exist yet.
+D1 — verified/device: owner-approved service enumeration completed at
+2026-09-25T18:59:03Z. Two services were returned; ParcelHome service and app RX/TX
+UUIDs match E1/E7. Properties are recorded in ble-protocol.md. The tool disconnected
+without error. Private capture: `.local/service-discovery/20260925T185903Z-88811a63d351498590d6a47ecbb9601a.json`.
+No characteristic values, subscriptions or control commands were used. No claim
+of successful app-level authentication or unlocking follows from this connection.

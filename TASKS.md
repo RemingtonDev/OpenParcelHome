@@ -11,7 +11,12 @@
 
 ## Recovery milestone (not yet achieved)
 - [ ] Establish an owner-authorised credential recovery/onboarding path.
-- [ ] Identify the physical target with owner-approved discovery.
+- [x] Run one owner-approved 15-second advertisement scan (2026-09-25); no connection.
+- [x] Run three owner-approved 30-second repeat scans; candidate reappeared, with changing advertisement state.
+- [x] Owner confirmed successful normal keypad opening during the final repeat scan.
+- [x] Prepare metadata-only service discovery and verify eight offline tests.
+- [x] Owner approved one connection; service and app RX/TX UUIDs match; disconnection completed.
+- [ ] Confirm normal keypad access after service discovery.
 - [ ] Implement evidence-backed codecs with synthetic tests.
 - [ ] Verify one authorised operation on the actual box.
 - [ ] Verify fresh-client offline onboarding and document limitations.

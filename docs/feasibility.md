@@ -41,3 +41,12 @@ The GitHub research project is useful now. Restored access is not achieved until
 an independent implementation succeeds on the actual box. Full offline recovery
 also requires onboarding from a fresh client with original cloud infrastructure
 unreachable. Neither outcome is demonstrated by this assessment.
+
+## Update after D1
+
+Owner-approved discovery now confirms the service and communication UUIDs on the
+selected nearby device. One connection and disconnection completed successfully,
+without reading values, subscribing or sending control commands. This removes the
+service-compatibility uncertainty for this candidate; numeric-code equivalence and
+authorised command behaviour remain untested. Next engineering work is signature
+verification and offline protocol/response tests before proposing a command test.
