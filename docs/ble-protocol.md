@@ -44,3 +44,21 @@ on UUIDs 0x2a29, 0x2a27 and 0x2a26. No characteristic values were read.
 No notifications were subscribed to and no control writes were sent. Properties
 alone do not prove authorisation or successful command handling. Do not use the
 additional write characteristic until its semantics are established.
+
+## Offline opening codec
+
+`openparcelhome/protocol.py` implements only the minimal single-frame opening form:
+frame header 0x8000, a type-0 14-bit message identifier (restricted to the original
+random range 0..8189), operation 1, code parsed as a nonnegative signed-32-bit-range
+integer, then a zero flags integer. All multi-byte fields are big-endian; total
+length is 14 bytes. Leading zeroes are parsed numerically, as in the inspected app.
+The zero flags omit log-ID and timestamp fields; no admin/code-sync commands exist
+in this implementation. Synthetic vectors are in tests/fixtures/opening-vectors.json.
+
+The bounded reassembler uses a two-byte first frame header and a one-byte continuation
+header, frame indices and the last-frame bit observed in the builder. It retains the
+message's two-bit type and 14-bit ID; trailing values use the app parser's signed
+16-bit interpretation. The response tests are synthetic structural tests. Message
+types, success codes and response ordering have NOT been validated on the device.
+The first opening experiment sends no application ACK; see its explicit limits in
+opening-test.md. No real opening command has been sent.

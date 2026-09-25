@@ -1,0 +1,30 @@
+{
+  "source": "A1 decompiled BTCommandBuilder executed locally; enum short casts restored for javac; random message ID replaced with 123; codes are synthetic. No captured owner data.",
+  "vectors": [
+    {
+      "synthetic_code": "0",
+      "message_id": 123,
+      "frame_hex": "8000007b00010000000000000000"
+    },
+    {
+      "synthetic_code": "000123",
+      "message_id": 123,
+      "frame_hex": "8000007b00010000007b00000000"
+    },
+    {
+      "synthetic_code": "123456",
+      "message_id": 123,
+      "frame_hex": "8000007b00010001e24000000000"
+    },
+    {
+      "synthetic_code": "999999",
+      "message_id": 123,
+      "frame_hex": "8000007b0001000f423f00000000"
+    },
+    {
+      "synthetic_code": "2147483647",
+      "message_id": 123,
+      "frame_hex": "8000007b00017fffffff00000000"
+    }
+  ]
+}

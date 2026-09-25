@@ -4,7 +4,8 @@
 - [x] Inspect the empty workspace, supplied context and available Mac tools.
 - [x] Check upstream projects and retrieve an Android archive candidate.
 - [x] Record package identity, partial JAR-signature evidence and provenance limitations.
-- [ ] Complete Android apksigner verification and known-good provenance comparison.
+- [x] Complete Android signature verification with Google apksig; tampered negative control rejected.
+- [ ] Compare publisher identity with a known-good owner installation (external evidence still unavailable).
 - [x] Trace the opening-code path and identify unresolved owner credential equivalence.
 - [x] Add discovery tooling and run offline safety tests.
 - [x] Publish reviewed original material to GitHub and verify CI (run 36175438164).
@@ -17,7 +18,9 @@
 - [x] Prepare metadata-only service discovery and verify eight offline tests.
 - [x] Owner approved one connection; service and app RX/TX UUIDs match; disconnection completed.
 - [x] Owner confirmed normal keypad access after service discovery.
-- [ ] Implement evidence-backed codecs with synthetic tests.
+- [x] Implement opening encoder and bounded response framing with synthetic/reference tests.
+- [x] Prepare private-input single-attempt runner and reviewable opening experiment (28 offline tests).
+- [ ] Obtain explicit approval for the prepared opening experiment; no live opening command sent.
 - [ ] Verify one authorised operation on the actual box.
 - [ ] Verify fresh-client offline onboarding and document limitations.
 - [ ] Build the iPhone client after the protocol/credential gate passes.

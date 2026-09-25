@@ -12,9 +12,14 @@ in `.local/reports/python-resolved.txt`.
 
 Apktool decoding exited 0. JADX exited 3 with 84 reported decompilation errors;
 its output is partial, and critical encoding was cross-checked in smali. No claim
-of complete decompilation. Android SDK/apksigner are not installed; Android signature
-scheme verification remains outstanding. JDK jarsigner is not a substitute for it.
+of complete decompilation. Android SDK/apksigner are not installed. Android signature verification was later
+completed using Google apksig 9.4.1 stored privately in `.local/tools/apksig/`, with
+the existing JDK. No further system installation was needed.
 
 Five offline tests passed locally and on GitHub Actions with Python 3.12 and 3.14
 ([run 36175438164](https://github.com/RemingtonDev/OpenParcelHome/actions/runs/36175438164)). No scan, connection, notification subscription,
 cloud authentication or physical operation was performed in the initial research.
+
+Current preparation: 28 offline tests pass, including the opening runner. The APK
+signatures pass and a tampered copy fails. No new Bluetooth operation was performed
+during preparation, and no opening command has been sent.

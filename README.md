@@ -4,8 +4,9 @@ Independent, community-led preservation of ParcelHome delivery boxes.
 The goal is to let owners keep using their own hardware with a documented local
 protocol and, eventually, an iPhone app. Not affiliated with or endorsed by ParcelHome.
 
-**Research stage: this project cannot open a box yet.** No hardware compatibility
-or cloud-independent recovery has been demonstrated. Existing keypad access
+**Research stage: an experimental opening runner is prepared but has never been
+used on a box.** BLE services match one owner device; actual opening and
+cloud-independent recovery remain unproven. Existing keypad access
 should be preserved throughout testing.
 
 ## What we have found
@@ -14,12 +15,13 @@ Static inspection of a myParcelHome 3.0.2 Android archive identified BLE service
 and characteristic UUIDs and a command that carries a numeric opening code.
 The original app obtains that code from a cloud API. Whether an existing keypad
 code is accepted over BLE is **an untested hypothesis**, not a recovery procedure.
-The archive's publisher authenticity and full Android signature verification are
-still unresolved. See [feasibility](docs/feasibility.md) and
+Android v1/v2 signatures verify, but publisher authenticity has not been
+independently established. See [feasibility](docs/feasibility.md) and
 [artifact provenance](docs/artifact-provenance.md).
 
 ## Start here
 
+- [Prepared one-attempt opening test](docs/opening-test.md)
 - [Findings and next experiment](docs/feasibility.md)
 - [Bluetooth observations](docs/ble-protocol.md)
 - [Authentication and credentials](docs/authentication.md)
@@ -61,9 +63,9 @@ resolved. This is not yet a reproducibly locked end-user release.
 
 ## Roadmap
 
-1. Establish artifact provenance and document protocol/credential requirements.
-2. Identify the owner's box through approved discovery.
-3. Implement and test offline protocol code, then one explicitly approved operation.
+1. Done: verify Android signatures, document provenance limits and map the opening path.
+2. Done: compare the nearby candidate's BLE services with the app through approved discovery.
+3. Ready: offline-tested codec and guarded runner; await a separately approved opening test.
 4. Demonstrate onboarding on a fresh client without the original cloud.
 5. Build an iPhone client; consider Android, Home Assistant and Homey afterwards.
 

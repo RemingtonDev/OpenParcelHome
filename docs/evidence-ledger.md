@@ -31,3 +31,26 @@ UUIDs match E1/E7. Properties are recorded in ble-protocol.md. The tool disconne
 without error. Private capture: `.local/service-discovery/20260925T185903Z-88811a63d351498590d6a47ecbb9601a.json`.
 No characteristic values, subscriptions or control commands were used. No claim
 of successful app-level authentication or unlocking follows from this connection.
+
+
+A2 — verified/local: Google apksig 9.4.1 accepts A1 under v1/v2; certificate matches
+A1's recorded digest. A one-byte-mutated private copy fails with CHUNKED_SHA256 digest
+mismatch. Logs: `.local/reports/apksig-verification.txt` and `apksig-tampered.txt`.
+This is integrity evidence, not independent publisher identification.
+
+E9 — verified/static: `BTCommandBuilder.smali:61` and `:86` use shift 0x0e for
+payload type; `:367` starts buildOpenBox, including optional-field branches.
+The `OPEN_BOX` enum value is 1. Zero optional inputs omit both fields.
+
+E10 — verified/local synthetic reference: the inspected builder, ByteParser and
+enum were compiled in `.local/reference/`. Explicit short casts repaired a JADX
+compile issue in enum constants; BSON.SYMBOL=14 and an unused TagAuthorization
+class were stubbed. Only buildOpenBox(code,0,0) and signed trailer parsing ran.
+Five synthetic inputs were used, with random message ID bytes replaced with 123.
+Output: `.local/reports/reference-vectors.txt`; public synthetic equivalents are
+`tests/fixtures/opening-vectors.json`. This is not execution of the Android app.
+
+E11 — verified/offline: 28 tests cover reference matching, parser bounds, malformed
+and mismatched responses, consent, explicit target, exclusive attempt marker,
+timeout/cancellation cleanup, and no repeat opening writes. No response capture
+or successful opening result is claimed.

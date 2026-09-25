@@ -10,7 +10,7 @@ inspected builder and GATT write path contain no extra app-layer encryption step
 This does not establish the device's permission checks or Bluetooth link security.
 
 Hypothesis: an existing owner-held fixed/keypad code might also be accepted by the
-BLE opening command. No code has been tested and no replacement client exists.
+BLE opening command. No real code has been tried over BLE; an offline-tested experimental runner is now prepared.
 A server-issued receive code may have different privileges, lifetime or validation.
 The firmware might reject fixed codes, require other state, or differ from the APK.
 
@@ -24,16 +24,13 @@ no recoverable original iPhone app. This has not been independently hardware-tes
 
 ## Smallest next experiment
 
-Approve a 15-second advertisement scan beside the box, then inspect only relevant
-observations locally. The scan does not connect or open anything. Use proximity,
-normal owner wake behaviour and the extracted Eddystone/service evidence together;
-strong signal or a matching name alone is insufficient identification.
-
-After target identification, separately approve one connection for service and
-property enumeration. Review the result before subscriptions or any command. Before
-an unlock experiment, finish signature checks, offline encoding/response tests and
-review credential input, side effects, error handling and normal recovery access.
-Never enter the owner's real code in chat or a command-line argument.
+The device service inventory now matches the app; Android v1/v2 signatures verify.
+The codec matches five synthetic reference vectors and 28 offline tests pass.
+The next step is the [prepared opening experiment](opening-test.md), after explicit
+owner approval and local hidden credential entry. It sends a single code-bearing
+opening frame, with no optional timestamp/log fields or automatic retry.
+Actual code acceptance, response semantics and publisher identity independent of
+the mirror remain unknown. The experiment has not run.
 
 ## Completion boundary
 
@@ -48,5 +45,5 @@ Owner-approved discovery now confirms the service and communication UUIDs on the
 selected nearby device. One connection and disconnection completed successfully,
 without reading values, subscribing or sending control commands. This removes the
 service-compatibility uncertainty for this candidate; numeric-code equivalence and
-authorised command behaviour remain untested. Next engineering work is signature
-verification and offline protocol/response tests before proposing a command test.
+authorised command behaviour remain untested. Signature verification and offline protocol/response tests subsequently completed;
+see the prepared opening experiment.
