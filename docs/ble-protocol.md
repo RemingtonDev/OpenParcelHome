@@ -30,8 +30,7 @@ the first recovery experiment. No packet examples here contain real credentials.
 
 Verified/device: one connection completed, enumerated two services and disconnected
 without an error. The selected candidate had appeared in four advertisement scans;
-the owner confirmed successful keypad opening during the final scan. Normal keypad
-access after this connection still awaits owner confirmation.
+the owner confirmed successful keypad opening during the final scan. The owner also confirmed normal keypad access after this connection.
 
 | Observed UUID | Advertised GATT properties |
 | --- | --- |

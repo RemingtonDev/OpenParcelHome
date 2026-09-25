@@ -16,7 +16,7 @@
 - [x] Owner confirmed successful normal keypad opening during the final repeat scan.
 - [x] Prepare metadata-only service discovery and verify eight offline tests.
 - [x] Owner approved one connection; service and app RX/TX UUIDs match; disconnection completed.
-- [ ] Confirm normal keypad access after service discovery.
+- [x] Owner confirmed normal keypad access after service discovery.
 - [ ] Implement evidence-backed codecs with synthetic tests.
 - [ ] Verify one authorised operation on the actual box.
 - [ ] Verify fresh-client offline onboarding and document limitations.

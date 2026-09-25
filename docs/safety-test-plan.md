@@ -48,7 +48,7 @@ identity remains provisional because within-scan event timestamps were not retai
 
 Status: owner approved and the single connection completed successfully (D1).
 Service and app RX/TX UUIDs matched; disconnection completed without error.
-Normal keypad access after the connection awaits owner confirmation.
+Owner confirmed normal keypad access after the connection.
 Target: the same Mac-local candidate, stored in ignored
 `.local/reports/service-discovery-target.json` (no identifier published).
 
