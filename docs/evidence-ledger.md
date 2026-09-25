@@ -66,3 +66,17 @@ E12 — verified/static: BTService.java:93 (`finalizeCommand`) builds its ACK us
 the second received message's ID. HomeActivity.java:333 checks zero error status
 for its opening-success path. This supports interpreting the observed nonzero
 trailer as unsuccessful; the exact meaning of 2 is unknown. See opening-result-01.md.
+
+
+E13 — verified/static: `BTCommandBuilder.buildGetAuthFixedCode` and smali method at
+`BTCommandBuilder.smali:197` construct command 37 with the numeric code.
+`FixedCodeAuth` enum values and `FixedCodeController.safeForNext` identify the
+successful one-byte permission response. Permission 2 and D2 status 2 are different
+fields and must not be conflated. `StatusBox.Builder.decode` provides the selected
+status-field offsets. These findings support docs/diagnostic-plan.md.
+
+E14 — verified/local synthetic reference: `.local/reference/ReferenceDiagnostics.java`
+executed the inspected builder's GET_STATUS, GET_AUTH_FIXED_CODE("123456") and ACK
+methods. Request IDs were replaced with 123/124; ACK used 16383. Results are private
+in `.local/reports/diagnostic-reference-vectors.txt` and encoded as synthetic test
+expectations in tests/test_diagnostics.py. No live diagnostic query was sent.

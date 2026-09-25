@@ -27,3 +27,8 @@
 - [ ] Verify one authorised operation on the actual box.
 - [ ] Verify fresh-client offline onboarding and document limitations.
 - [ ] Build the iPhone client after the protocol/credential gate passes.
+
+## Follow-up diagnostics
+- [x] Trace fixed-code permission query, status parsing and response ACKs in the app.
+- [x] Prepare bounded status/permission diagnostic batch; 36 offline tests pass.
+- [ ] Obtain approval and run D3 diagnostics; no further opening attempt authorised.
