@@ -43,3 +43,8 @@
 - [ ] Resolve opening result 2 or obtain evidence distinguishing fixed codes from receive codes.
 - [x] Confirm manufacturer-stated ParcelHome technology connection and portal registration requirement.
 - [x] Prepare an unsent RENZ enquiry about old-box compatibility, result 2 and local operation.
+
+## D4 revised local opening
+- [x] Prepare same-input permission check and one acknowledged opening; no RENZ service dependency.
+- [x] Verify offline fail-closed behaviour, private-input gates and preserved prior guards.
+- [ ] Owner executes D4 via local confirmation and reports physical outcome and normal keypad access.
